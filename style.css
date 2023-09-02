@@ -1,3 +1,102 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.card {
+    max-width: 320px;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 12px;
+}
+
+.cube {
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.cube:hover::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    background-image: url(/images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+.link{
+   color: white;
+    text-decoration: none; 
+}
+
+.link:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.about {
+    font-size: 16px;
+    line-height: 150%;
+    margin: 14px 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.flex--space {
+    justify-content: space-between;
+}
+
+.flex--sm{ 
+    gap: 5px;
+}
+
+.time {
+
+}
+
+.price {
+    
+    color: hsl(178, 100%, 50%);
+}
+
+.man {
+    max-width: 35px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+.line {
+    border: none;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
 }
